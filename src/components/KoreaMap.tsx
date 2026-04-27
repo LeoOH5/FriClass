@@ -318,11 +318,11 @@ export default function KoreaMap({
                     handleProvinceClick(geo as unknown as ProvinceFeature)
                   }
                   onMouseEnter={() =>
-                    setHoveredInfo({ code: geo.properties.code, name: geo.properties.name })
+                    setHoveredInfo({ code: geo.properties.code as string, name: geo.properties.name as string })
                   }
                   onMouseLeave={() => setHoveredInfo(null)}
                   onTouchStart={() =>
-                    setHoveredInfo({ code: geo.properties.code, name: geo.properties.name })
+                    setHoveredInfo({ code: geo.properties.code as string, name: geo.properties.name as string })
                   }
                   style={{
                     default: {
@@ -353,7 +353,7 @@ export default function KoreaMap({
               geographies
                 .filter((geo) =>
                   selectedProvince
-                    ? geo.properties.code.startsWith(selectedProvince.code)
+                    ? (geo.properties.code as string).startsWith(selectedProvince.code)
                     : false
                 )
                 .map((geo) => (
@@ -364,15 +364,15 @@ export default function KoreaMap({
                       handleMuniClick(geo as unknown as MuniFeature)
                     }
                     onMouseEnter={() =>
-                      setHoveredInfo({ code: geo.properties.code, name: geo.properties.name })
+                      setHoveredInfo({ code: geo.properties.code as string, name: geo.properties.name as string })
                     }
                     onMouseLeave={() => setHoveredInfo(null)}
                     onTouchStart={() =>
-                      setHoveredInfo({ code: geo.properties.code, name: geo.properties.name })
+                      setHoveredInfo({ code: geo.properties.code as string, name: geo.properties.name as string })
                     }
                     style={{
                       default: {
-                        fill: getMuniColor(geo.properties.code),
+                        fill: getMuniColor(geo.properties.code as string),
                         stroke: "#d97706",
                         strokeWidth: 0.5,
                         outline: "none",
@@ -408,15 +408,15 @@ export default function KoreaMap({
                     )
                   }
                   onMouseEnter={() =>
-                    setHoveredInfo({ code: geo.properties.code, name: geo.properties.name })
+                    setHoveredInfo({ code: geo.properties.code as string, name: geo.properties.name as string })
                   }
                   onMouseLeave={() => setHoveredInfo(null)}
                   onTouchStart={() =>
-                    setHoveredInfo({ code: geo.properties.code, name: geo.properties.name })
+                    setHoveredInfo({ code: geo.properties.code as string, name: geo.properties.name as string })
                   }
                   style={{
                     default: {
-                      fill: getDongColor(geo.properties.code),
+                      fill: getDongColor(geo.properties.code as string),
                       stroke: "#d97706",
                       strokeWidth: 0.2,
                       outline: "none",
