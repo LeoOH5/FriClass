@@ -11,9 +11,9 @@
 [![Supabase](https://img.shields.io/badge/DB-Supabase-3ecf8e?style=for-the-badge&logo=supabase)](https://supabase.com)
 [![Vercel](https://img.shields.io/badge/Deployed-Vercel-000000?style=for-the-badge&logo=vercel)](https://fri-class.vercel.app)
 
-<video src="media/promo.mp4" autoplay loop muted playsinline width="100%"></video>
+![감튀모임 데모](media/promo.gif)
 
-> 🎬 **[프로모 영상 보기 (MP4)](media/promo.mp4)** &nbsp;·&nbsp; 🍟 **[지금 사용하기](https://fri-class.vercel.app)**
+> 📺 **[원본 영상 보기 (MP4)](media/promo.mp4)** &nbsp;·&nbsp; 🍟 **[지금 사용하기](https://fri-class.vercel.app)**
 
 </div>
 
