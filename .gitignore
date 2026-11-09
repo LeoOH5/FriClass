@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# 홍보 영상 제작 프로젝트(HyperFrames, 로컬 전용)
+promo_hyperframes/
